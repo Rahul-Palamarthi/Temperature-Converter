@@ -2,6 +2,8 @@
 
 This is a React application to convert the temperature to different units
 
-You can see the website by clicking the [https://websitedomain]("link" "Temp Conv")
+![temp conv preview]("https://github.com/Rahul-Palamarthi/Temperature-Converter/blob/main/src/assets/images/tempConv.png" "Preview")
+
+You can see the website by clicking the [link]("https://temp-conv.onrender.com/" "Temperature Converter")
 
 Made with ❤️ by Rahul Palamarthi
