@@ -1,0 +1,237 @@
+header {
+    padding: 1.75em 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: var(--orange);
+    font-family: var(--mori);
+    font-weight: bold;
+    font-style: normal;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-style: italic;
+    -webkit-text-stroke: 0.7px var(--black);
+    letter-spacing: 0.7px;
+}
+
+.more {
+    font-size: 0.9rem;
+    color: var(--black);
+    border-bottom: 2px dotted var(--lightOrange);
+    transition: 300ms ease;
+    padding: 0 0 0.75em;
+}
+
+.more:is(:hover, :focus) {
+    border-bottom: 2px dotted var(--black);
+}
+
+/* main */
+main {
+    min-height: calc(100vh - 54.6px);
+}
+
+.temp-type-header {
+    color: var(--black);
+    font-size: 1rem;
+    font-family: var(--mori);
+    font-weight: bold;
+    white-space: pre-wrap;
+}
+
+.result {
+    white-space: pre-wrap;
+    font-family: var(--mori);
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3rem;
+    color: var(--black);
+    padding: 0 0 0.5em;
+    margin: 0.5em 0;
+    border-bottom: 2px dotted var(--black);
+}
+
+.input-wrapper {
+    padding: 1em 0 0;
+}
+
+.temp-input {
+    width: min(400px, 100%);
+    color: var(--black);
+    outline: none;
+    border-radius: 500px;
+    border: 2px dotted var(--black);
+    filter: brightness(1.1);
+    background-color: var(--lightOrange);
+    font-size: 0.9rem;
+    font-family: var(--mori);
+    letter-spacing: 0.7px;
+    margin: 1em 0;
+    padding: 1.65em 2em 1.4em;
+    transition: 300ms ease;
+}
+
+.temp-input::-webkit-outer-spin-button,
+.temp-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.temp-input::placeholder {
+    font-size: 0.9rem;
+    color: var(--black);
+    filter: brightness(1);
+    transition: 300ms ease;
+}
+
+.temp-input:is(:hover, :focus) {
+    outline: none;
+    filter: brightness(1);
+    border-radius: 6px;
+    border: 2px dotted var(--black);
+}
+
+.temp-input:is(:hover, :focus)::placeholder {
+    opacity: 0;
+}
+
+.temp-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(400px, 100%);
+}
+
+.temp-type {
+    margin: 1em 0;
+    font-size: 0.8rem;
+    font-family: var(--mori);
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    background-color: var(--lightOrange);
+    color: var(--black);
+    border: 2px dotted var(--lightOrange);
+    outline: none;
+    padding: 1.65em 2em 1.4em;
+    transition: 300ms ease;
+    border-radius: 500px;
+}
+
+.temp-type:is(:hover, :focus) {
+    cursor: pointer;
+    filter: brightness(1);
+    border: 2px dotted var(--black);
+    border-radius: 6px;
+}
+
+.temp-type-active {
+    transition: 300ms ease;
+    background-color: var(--lightOrange);
+    filter: brightness(1.1);
+    border: 2px dotted var(--black);
+    color: var(--black);
+}
+
+.temp-type-active:is(:hover, :focus) {
+    border: 2px dotted var(--black);
+    filter: brightness(1.1);
+}
+
+.temp-submit {
+    margin: 1.25em 0;
+    background-color: var(--lightOrange);
+    padding: 0.6em 1em 0.5em;
+    letter-spacing: 0.7px;
+    border: 2px dotted var(--black);
+    outline: none;
+    filter: brightness(1.1);
+    font-size: 0.8rem;
+    font-family: var(--mori);
+    font-weight: bold;
+    font-style: normal;
+    color: var(--black);
+    transition: 300ms ease;
+    padding: 1.65em 2em 1.4em;
+    border-radius: 500px;
+}
+
+.temp-submit:is(:hover, :focus) {
+    background-color: var(--lightOrange);
+    filter: brightness(1);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    background-color: var(--black);
+    clip-path: inset(0 -100vmax);
+    box-shadow: 0 0 0 100vmax var(--black);
+    color: var(--lightOrange);
+    padding: 2em 0;
+    font-family: var(--mori);
+    font-weight: bold;
+}
+
+.find-me {
+    font-size: 3rem;
+    font-style: normal;
+    padding: 0 0 0.2em;
+}
+
+.made-with-love {
+    font-size: 0.8rem;
+    font-style: italic;
+    letter-spacing: 0.7px;
+    padding: 0 0 1.5em;
+}
+
+.social-wrapper {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 1.3em;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.social-links {
+    color: var(--lightOrange);
+    letter-spacing: 0.9px;
+    font-size: 0.7rem;
+    transition: 300ms ease;
+    font-style: normal;
+    padding: 0 0 5px;
+    text-transform: uppercase;
+    border-bottom: 2px dotted var(--black);
+}
+
+.social-links:is(:hover, :focus) {
+    border-bottom: 2px dotted var(--lightOrange);
+}
+
+@media (max-width: 720px) {
+    .find-me {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .find-me {
+        font-size: 1.9rem;
+    }
+
+    header {
+        padding: 1.25em 0;
+    }
+}
+
+@media (max-width: 430px) {
+    :is(.temp-input, .temp-type, .temp-submit) {
+        padding: 1.25em 1.5em 1.05em;
+    }
+}
